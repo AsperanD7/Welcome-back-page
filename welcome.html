@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- Sets the character encoding for the document to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Ensures proper scaling on different devices -->
+    <title>Welcome back</title><!-- Specifies the title of the webpage -->
+    <link rel="stylesheet" href="main.css" ><!-- Links an external CSS file for styling -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"><!-- Links Font Awesome library to use icons (e.g., envelope and lock) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"><!-- Links a Google font (Poppins) for text styling -->
+</head>
+<body>
+    <div class="welcome-container"><!-- Main container for the welcome back page -->
+        <div class="left-side"><!-- Left side of the container for the image -->
+            <img class="doctor-pic" src="images/image1.jpeg">
+        </div>
+        <div class="right-side"><!-- Right side of the container for the image -->
+            <h1>Welcome Back</h1><!-- Welcome message -->
+            <p>Please log in to your account to continue.</p> <!-- Instruction for the user -->
+            <!-- Login form -->
+            <form id="loginForm">
+                <div class="User-block">
+                    <!-- Label and input field for the user's Email address-->
+                    <label for="Email">Email Address</label>
+                    <div class="input-wrapper"> <!-- Wrapper for the email input with an envelope icon inside -->
+                        <i class="fas fa-envelope"></i><!-- Font Awesome icon for the envelope -->
+                        <input type="text" id="Email" name="Email" placeholder="Your email" required>
+                        <!-- Label and input field for the user's password -->
+                    </div>
+                    <label for="password">Password</label>
+                    <div class="input-wrapper"> <!-- Wrapper for the password input with a lock icon inside -->
+                        <i class="fas fa-lock"></i> <!-- Font Awesome icon for the lock -->
+                        <input type="password" id="password" name="password" placeholder="Your password" required>
+                    </div>
+                
+                </div>
+                
+                    <p class="Sign-up">Don’t have an account? <a href="#">Sign up</a></p><!-- Sign-up link for users without an account -->
+                    <p class="Reset-password">Having trouble accessing your account? <a href="#">Reset password</a></p><!-- Reset password link for users having trouble logging in -->
+                    <button type="submit">Login</button><!-- Login button to submit the form -->
+                </div>            
+            </form>
+            
+        </div>
+    </div>
+    <!-- Links an external JavaScript file for functionality -->
+    <script src="insert.js"></script>
+</body>
+</html>

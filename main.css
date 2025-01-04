@@ -1,0 +1,167 @@
+/* General body styling */
+body{
+    margin:0;/* Removes default margin */
+    padding:0;/* Removes default padding */
+    font-family: 'Poppins', sans-serif;
+    display: flex;/* Centers content horizontally and vertically */
+    justify-content: center;/* Horizontally centers content */
+    align-items: center;/* Vertically centers content */
+    height: 100vh;/* Makes the body full screen height */
+    background-color: #f7f7f7;/* Light grey background color */
+}
+
+/* Main container styling */
+.welcome-container{
+    display:flex;/* Centers content horizontally and vertically */
+    width: 100%;/* Full width */
+    height: 100%;/* Full height */
+    max-width: 1200px;/* Limits maximum width */
+    border-radius: 15px; /* Rounds the corners */
+    margin-right:40px; /* Adds spacing on the right */
+    overflow: hidden;/* Prevents content from overflowing */
+   padding-left: 0;/* Removes left padding */
+   margin-right:20px ;/* Adjusts right margin */
+
+}
+
+.left-side{
+    flex:1;/* Takes up remaining space */
+   
+
+}
+
+/* Styling for the doctor image */
+.doctor-pic {
+    flex:1;
+    height: 100%; /* Makes the image full height */
+    width: 85%; /* Adjusts image width */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    padding-bottom: 0; /* No padding at the bottom */
+    margin-top: 0; /* Removes top margin */
+    margin-bottom: 0; /* Removes bottom margin */
+}
+
+/* Right section styling */
+.right-side {
+    margin-right: 20px; /* Adds space on the right */
+    flex: 0 1 400px; /* Fixed width but flexible to shrink */
+    padding: 20px; /* Adds inner spacing */
+    margin-top: 50px; /* Pushes the section down */
+    margin-bottom: 30px; /* Adds spacing from the bottom */
+    justify-content: flex-end; /* Aligns items to the end */
+}
+
+
+
+/* Styling for the welcome message */
+h1 {
+    font-size: 30px; /*text size*/
+    margin-right: 30px; /* Adds space to the right */
+    margin-top: 20px; /* Pushes the heading down slightly */
+    color: darkblue; /* Sets text color */
+    text-align: center; /* Centers text horizontally */
+    margin-bottom: 0; /* Removes bottom margin */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 12px; /* Small text size */
+    margin-right: 26px; /* Adds space to the right */
+    color: grey; /* Grey text color */
+    text-align: center; /* Centers text horizontally */
+    margin-top: 0; /* Removes top margin */
+}
+
+/* Block styling for user input */
+.User-block {
+    font-size: 12px; /* Small text */
+    display: flex; /* Flexible layout */
+    flex-direction: column; /* Stacks items vertically */
+}
+
+/* Label styling */
+label {
+    margin-top: 10px; /* Adds spacing above */
+    font-size: 10px; /* Small text size */
+    font-weight: 500; /* Slightly bold text */
+    color: rgb(19, 18, 18); /* Dark text color */
+}
+
+/* Input field styling */
+input {
+    margin-top: 0.5rem; /* Small space above */
+    height: 25px; /* Fixed height */
+    padding: 5px; /* Inner spacing */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 15px; /* Rounds the edges */
+    font-size: 12px; /* Small text */
+    width: 350px; /* Fixed width */
+}
+
+.input-wrapper {
+    position: relative; /* Enables absolute positioning for the icon */
+    display: flex; /* Align icon and input together */
+    align-items: center; /* Vertically aligns the icon inside the input */
+}
+
+
+.input-wrapper i{
+    position: absolute;
+    left: 10px; 
+    padding-top: 10px;
+    opacity: 0.1;
+    font-size: 14px; 
+    align-items: center;
+    pointer-events: none; /* Prevents the icon from blocking clicks*/
+}
+
+
+
+/* Styling for the "Sign up" link */
+.Sign-up{
+    margin-top: 15px; /* Adds space above */
+    font-size: 10px; /* Small text */
+    color: black; /* Black text */
+}
+
+/* Styling for the "Reset password" link */
+.Reset-password {
+    font-size: 8px; /* Very small text */
+    color: black; /* Black text */
+    padding-bottom: 12px; /* Adds space below */
+}
+
+/* Button styling */
+button {
+    background-color: darkblue; /* Dark blue background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    width: 350px; /* Fixed width */
+    height: 42px; /* Fixed height */
+    border-radius: 20px; /* Rounds the edges */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: opacity 0.15s; /* Smooth opacity change on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    opacity: 0.8; /* Reduces opacity for a lighter look */
+}
+
+/* Link styling */
+a {
+    color: darkblue; /* Dark blue text color */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Link hover effect */
+a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Placeholder text styling */
+::placeholder {
+    color: rgb(192, 192, 192); /* Light grey placeholder text */
+    font-size: 9px; /* Small text size */
+    padding-left: 30px;
+}
